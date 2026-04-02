@@ -21,12 +21,9 @@ const messages = [
   "🌱 **Patience :** Rome s'est construite tous les jours. Code aujourd'hui, même un peu.",
 ];
 
-let index = 0;
-
 function getNextMessage() {
-  const msg = messages[index % messages.length];
-  index++;
-  return msg;
+  const index = Math.floor(Math.random() * messages.length);
+  return messages[index];
 }
 
 module.exports = { getNextMessage };
