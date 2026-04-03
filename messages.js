@@ -22,8 +22,7 @@ const messages = [
 ];
 
 function getNextMessage() {
-  const index = Math.floor(Math.random() * messages.length);
-  return messages[index];
+  return messages[Math.floor(Math.random() * messages.length)];
 }
 
 module.exports = { getNextMessage };
